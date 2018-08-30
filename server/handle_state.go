@@ -12,16 +12,16 @@ func handleReportState(c echo.Context) error {
 	})
 }
 
-func handleGetState(c echo.Context) error {
+func handleFulfillState(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, State{
 		Properties: []Property{
 			{
-				Action: CameraStream,
+				Action: ActionCameraStream,
 				Value:  "https://camerastream.homegate.cc/000-00-000",
 			},
 			{
-				Action: OnOff,
+				Action: ActionOnOff,
 				Value:  "ON",
 			},
 		},

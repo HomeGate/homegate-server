@@ -9,5 +9,5 @@ func main() {
 
 	e := server.CreateEndpoint()
 
-	log.Panicln(e.Start(":5050"))
+	log.Panicln(e.Start(":8080"))
 }
